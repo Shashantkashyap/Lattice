@@ -9,4 +9,4 @@ I would add a feature of OTP validation for email authentication.
 
 All other requirements are fullfilled in the code.
 
-App deployment:  https://ui-4oub.onrender.com .
+App deployment: .https://front-io6q.onrender.com
