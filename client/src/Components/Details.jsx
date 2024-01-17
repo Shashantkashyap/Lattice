@@ -9,7 +9,7 @@ function Details() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/fetch', { hID });
+      const response = await axios.post('https://server-ki5g.onrender.com/api/fetch', { hID });
       setData(response.data.details);
       console.log(response);
     } catch (error) {

@@ -23,7 +23,7 @@ function Signup() {
   });
 
   const getOtp = async()=>{
-    const o = await axios.post('http://localhost:3000/api/otp', { email: data.email });
+    const o = await axios.post('https://server-ki5g.onrender.com/api/otp', { email: data.email });
     
   }
 
@@ -55,7 +55,7 @@ function Signup() {
     formData.append('file', data.file);
 
     try {
-      const response = await axios.post('http://localhost:3000/api/registration', formData);
+      const response = await axios.post('https://server-ki5g.onrender.com/registration', formData);
       if(o.request.status===200){
         toast.success("Patient registered successfully",{
           duration:3000,

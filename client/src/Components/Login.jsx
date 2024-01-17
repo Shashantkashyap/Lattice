@@ -18,7 +18,7 @@ function Signup() {
   });
 
   const getOtp = async()=>{
-    const o = await axios.post('http://localhost:3000/api/otp', { email: data.email });
+    const o = await axios.post('https://server-ki5g.onrender.com/api/otp', { email: data.email });
     console.log(o)
    if(o.request.status===200){
     toast.success("OTP sent successfully",{
@@ -38,7 +38,7 @@ function Signup() {
     console.log(data);
 
     try {
-      const response = await axios.post('http://localhost:3000/api/login', data);
+      const response = await axios.post('https://server-ki5g.onrender.com/api/login', data);
 
       if(response.request.status===200){
         toast.success("Psychiatrist login successfully",{
