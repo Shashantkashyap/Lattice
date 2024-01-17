@@ -12,7 +12,7 @@ dbConnect();
 cloudinaryConnect();
 
 app.use(cors({
-    origin:"http://ui-4oub.onrender.com",
+    origin:"https://ui-4oub.onrender.com",
     credentials:true
 }))
 
