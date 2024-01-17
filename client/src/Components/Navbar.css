@@ -1,0 +1,48 @@
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #3498db, #2c3e50); 
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    transition: background 0.3s ease; 
+  }
+  
+  .logo-container h2 {
+    margin: 0;
+    color: #fff; 
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  button {
+    background-color: #2ecc71; 
+    color: #fff; 
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease; 
+  }
+  
+  button:hover {
+    background-color: #27ae60;
+  }
+  
+  .signup-button {
+    background-color: #e74c3c; 
+  }
+  
+  .signup-button:hover {
+    background-color: #c0392b; 
+  }
+  
+  
