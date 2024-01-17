@@ -18,7 +18,7 @@ function Signup() {
   });
 
   const getOtp = async()=>{
-    const o = await axios.post('https://server-ki5g.onrender.com/api/otp', { email: data.email });
+    const o = await axios.post('https://back-aply.onrender.com/api/otp', { email: data.email });
     console.log(o)
    if(o.request.status===200){
     toast.success("OTP sent successfully",{
