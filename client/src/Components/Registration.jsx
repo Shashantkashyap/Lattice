@@ -23,7 +23,7 @@ function Signup() {
   });
 
   const getOtp = async()=>{
-    const o = await axios.post('https://server-ki5g.onrender.com/api/otp', { email: data.email });
+    const o = await axios.post('https://back-aply.onrender.com/api/otp', { email: data.email });
     if(o.request.status===200){
     toast.success("OTP sent successfully",{
       duration:3000,
@@ -65,7 +65,7 @@ function Signup() {
     formData.append('file', data.file);
 
     try {
-      const response = await axios.post('https://server-ki5g.onrender.com/registration', formData);
+      const response = await axios.post('https://back-aply.onrender.com/registration', formData);
       if(response.request.status===200){
         toast.success("Patient registered successfully",{
           duration:3000,
