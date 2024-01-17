@@ -38,7 +38,7 @@ function Signup() {
     console.log(data);
 
     try {
-      const response = await axios.post('https://server-ki5g.onrender.com/api/login', data);
+      const response = await axios.post('https://back-aply.onrender.com/api/login', data);
 
       if(response.request.status===200){
         toast.success("Psychiatrist login successfully",{
