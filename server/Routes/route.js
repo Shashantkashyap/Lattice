@@ -176,7 +176,7 @@ router.post("/registration", async (req, res) => {
 
     const patient_email = await Patient.findOne({ email: email });
     if (patient_email) {
-      return res.status(400).json({ success: false, message: "Patient is already registered" });
+      return res.status(200).json({ success: true, message: "Patient is already registered" });
     }
 
     const image = req.files.file;
